@@ -1,8 +1,11 @@
-import {Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
+import NotFoundPage from "../pages/NotFoundPage.jsx";
 
-export default function Routes() {
-    return <Routes>
-        {/*<Route path="/asd" element={<h1>Test</h1>}/>*/}
-        <Route path="*" element={<h1>Not found</h1>} />
-    </Routes>
+export default function RoutesComponent() {
+    return (
+        <Routes>
+            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+    )
 }
