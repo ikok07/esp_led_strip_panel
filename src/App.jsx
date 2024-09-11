@@ -1,16 +1,16 @@
 import {Provider} from "react-redux";
-import store from "./store/store.js";
 import {BrowserRouter} from "react-router-dom";
 import RoutesComponent from "./router/Routes.jsx";
+import GlobalContextProvider from "./context/GlobalContext.jsx";
 
 export default function App() {
   return <>
-    <Provider store={store}>
+    <GlobalContextProvider>
       <BrowserRouter>
-        <div>
+        <main className="font-jetbrains">
           <RoutesComponent />
-        </div>
+        </main>
       </BrowserRouter>
-    </Provider>
+    </GlobalContextProvider>
   </>
 }

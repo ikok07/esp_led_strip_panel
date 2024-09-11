@@ -1,4 +1,7 @@
 @import "constants";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   font-size: 10px;
@@ -8,4 +11,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.radio-controls {
+  .MuiFormControlLabel-label {
+    font-size: 1.6rem;
+    font-family: "JetBrains Mono", sans-serif;
+  }
+}
+
+.color-picker {
+  .MuiInputBase-input {
+    font-size: 1.4rem;
+    padding-block: 1.6rem;
+  }
 }
