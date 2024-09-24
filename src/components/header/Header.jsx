@@ -1,8 +1,8 @@
 import Box from "../ui/Box.jsx";
 import {UilChannel, UilPalette, UilPower, UilSignal} from "@iconscout/react-unicons";
 import {useGlobal} from "../../context/GlobalContext.jsx";
-import {numToModeString} from "../../../utils/numToModeString.js";
-import {numToStateString} from "../../../utils/numToStateString.js";
+import {numToModeString} from "../../utils/numToModeString.js";
+import {numToStateString} from "../../utils/numToStateString.js";
 
 export default function Header() {
     const {connectionStatus, currentState, currentMode, currentColor} = useGlobal();

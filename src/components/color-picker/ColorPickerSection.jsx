@@ -1,7 +1,7 @@
 import SectionHeading from "../ui/SectionHeading.jsx";
 import {MuiColorInput} from "mui-color-input";
 import {useGlobal} from "../../context/GlobalContext.jsx";
-import hexToRGB from "../../../utils/hexToRGB.js";
+import hexToRGB from "../../utils/hexToRGB.js";
 import {useCallback, useEffect, useState} from "react";
 import {debounce} from "@mui/material";
 import {SketchPicker} from "react-color";

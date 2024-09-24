@@ -1,7 +1,7 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import mqtt from "mqtt"
 import {rgbToHex} from "@mui/material";
-import hexToRGB from "../../utils/hexToRGB.js";
+import hexToRGB from "../utils/hexToRGB.js";
 
 const GlobalContext = createContext();
 
